@@ -16,17 +16,18 @@ Both are bundled in `Fiken/Resources/Fonts/` and registered at launch.
 - Designer: Crystal Kluge
 - **Licence: SIL Open Font License, Version 1.1** — https://scripts.sil.org/OFL
 
-The OFL requires that the licence text accompany the font. Place a verbatim copy
-of `OFL.txt` beside the `.ttf` before shipping; it is distributed with the font
-on Google Fonts.
+Licence text: `Fiken/Resources/Fonts/OFL.txt`, shipped inside the app bundle.
+This is the copy distributed with the font itself, so it carries the correct
+Reserved Font Name notice.
 
 ### Special Elite
 - Copyright (c) 2010 Brian J. Bonislawsky DBA Astigmatic (AOETI)
 - Designer: Astigmatic (AOETI)
 - **Licence: Apache License, Version 2.0** — https://www.apache.org/licenses/LICENSE-2.0
 
-Apache 2.0 requires a copy of the licence and any `NOTICE` file to be
-distributed with the work. Place `LICENSE-2.0.txt` beside the `.ttf`.
+Licence text: `Fiken/Resources/Fonts/LICENSE-Apache-2.0.txt`, shipped inside the
+app bundle. The font ships no `NOTICE` file, so the copyright line above plus the
+licence satisfies section 4.
 
 ---
 
@@ -40,17 +41,17 @@ synthesised in `SoundEngine.swift` and are original to this project.
 | `bubble_pop.mp3` | bubble wrap pop |
 | `light_switch.mp3` | light switch |
 
-> **UNRESOLVED — must be settled before submitting.**
+Both were confirmed by the project owner as free for commercial use.
+
+> Worth recording the source site and licence name here, for your own records.
 > These arrived named `universfield-bubble-pop-06-351337.mp3` and
-> `dragon-studio-light-switch-382712.mp3`, which is the naming pattern of a
-> stock audio library — contributor name plus asset ID. They have since been
-> renamed, so the provenance now lives only here. Record the source site, the
-> licence, and whether attribution is required. "Free to download" is
-> not the same as "free to ship in a paid or commercial app", and App Review
-> will not check this — but the rights holder can, afterwards.
->
-> If the licence cannot be established, the fallback is cheap: delete the two
-> files and the synthesised voices take over automatically.
+> `dragon-studio-light-switch-382712.mp3` — contributor plus asset ID, the
+> naming pattern of a stock audio library. The rename erased that trail, so a
+> link is the only durable evidence if the licence is ever questioned; "I
+> checked at the time" is not something you can produce later.
+
+If the two files are ever removed, the synthesised voices take over
+automatically and nothing breaks.
 
 ---
 
