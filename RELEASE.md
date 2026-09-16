@@ -62,15 +62,15 @@ individual membership rather than free provisioning. Enrolling an Apple ID that
 already had a personal team keeps the same team ID, which is why nothing in the
 project had to change.
 
-Two leftovers from before enrolment are still on this machine. Both are
-harmless and clear themselves:
+Confirmed the only way it can really be confirmed: a store export succeeded,
+which free provisioning cannot do. The build is signed `Apple Distribution:
+Kabir Sharma (35L86WVALV)` and carries `iOS Team Store Provisioning Profile`,
+good until 16 September 2027, with `get-task-allow` off and no provisioned
+devices — a real App Store build rather than a development one.
 
-- the cached provisioning profile is still a 7-day one, expiring 21 September.
-  Xcode replaces it with a year-long profile next time it refreshes signing.
-- there is no **Apple Distribution** certificate yet, only `Apple Development`.
-  Xcode creates the distribution one the first time you run Distribute App (or
-  `xcodebuild -exportArchive`). You get two distribution certificates per
-  account, so let Xcode manage them rather than creating them by hand.
+You get two distribution certificates per account, so let Xcode manage them
+rather than creating more by hand. The old 7-day development profile is still
+cached for installs onto your own phone; it has nothing to do with submission.
 
 Where to confirm any of this yourself:
 
@@ -191,6 +191,14 @@ earns the cleanest possible privacy label on your listing.
 ---
 
 ## 5. Build and upload
+
+**Already done for 1.0 (1).** The archive is built and sitting in Organizer as
+`Fiken 2026-09-16 16.04`, and a distribution-signed `Fiken.ipa` is in the
+project folder (gitignored) if you'd rather upload through Transporter. Open
+Window → Organizer → Archives and skip to step 3.
+
+Repeat from step 1 after any code change — a build that has been uploaded can
+never be reused, and `CURRENT_PROJECT_VERSION` must go up each time.
 
 In Xcode:
 
