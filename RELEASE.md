@@ -14,10 +14,10 @@ the pads and see whether you can tell *where* each pulse came from, or whether
 it just reads as one buzz. This is the last open design question and it costs
 ten seconds.
 
-**Run the app at all.** The Release build has never been launched on hardware.
-It installs, but the first launch was blocked by an untrusted profile, which is
-normal for a free account: Settings → General → VPN & Device Management → your
-Apple ID → Trust. Don't submit something nobody has held.
+**Hold it before you upload.** Done as far as a machine can take it: the
+Release build is installed on the phone and has been launched from here. What
+remains is the part only a hand can do — use it for a minute, and judge the
+massage screen above.
 
 **Record where the audio came from.** `THIRD-PARTY-NOTICES.md` has a placeholder
 for it. You've confirmed the two clips are free for commercial use, but the
@@ -37,20 +37,17 @@ icon and wordmark all say Fiken, and the home screen name stays `Fiken`
 regardless. The store name and the icon caption are separate fields, and
 nothing in the app has to change for this.
 
-**Switch on Pages — one toggle, and it is the last thing blocking submission.**
-App Store Connect will not take the version without a privacy policy URL.
+**Both listing URLs are live.** Checked by fetching them, not assumed:
 
-The repo is now public (`visibility: public`), so the support URL
-`https://github.com/krizer18/fiken` already returns 200 and reviewers can open
-it. Pages, though, is a separate switch and is still off: the API reports
-`has_pages: false`, and `https://krizer18.github.io/fiken/` returns 404.
+| Field | URL | State |
+|---|---|---|
+| Privacy Policy URL | `https://krizer18.github.io/fiken/` | 200, serving "Privacy Policy for Fiken" |
+| Support URL | `https://github.com/krizer18/fiken` | 200, repo public |
 
-- GitHub → `krizer18/fiken` → Settings → Pages
-- Source: **Deploy from a branch**, branch `main`, folder **`/docs`**, Save
-- Give it a minute to build, then open the URL and confirm it renders
-
-The content is already pushed and in the layout Pages expects: `docs/index.md`
-with `docs/_config.yml` beside it.
+Pages builds from `main` / `/docs`. If the policy ever changes, edit
+`docs/index.md` and push — the site rebuilds itself within a minute. Keep both
+URLs working for as long as the app is on sale: a privacy policy that goes 404
+later is grounds for removal, not merely rejection.
 
 ---
 
@@ -254,11 +251,9 @@ app like this is metadata rather than code.
 
 ## Still open
 
-- **The massage screen** has never been judged on a real hand (step 1)
-- **No build has ever been run** on a device (step 1)
+- **The massage screen** has never been judged on a real hand. The app is
+  installed and running on the phone now, so this is a one-minute check (step 1)
 - **Audio provenance** is unrecorded (step 1)
-- **Pages is still off**, so the privacy policy URL 404s. One toggle, and it is
-  the only remaining hard block on submission (step 1)
 - **Two things in the brief were never built**: the About screen (no view, no
   `about.json`, no button in Settings) and the "open on" setting, along with the
   last-used-fidget restore it controls. Neither blocks submission. Decide
