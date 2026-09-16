@@ -24,39 +24,33 @@ for it. You've confirmed the two clips are free for commercial use, but the
 rename erased the original filenames, which were the only trace of the source.
 A link is the only thing you can produce later if it is ever questioned.
 
-**Check the name — properly.** App names are unique on the App Store, so search
-it there first. But also know that **Fiken is one of Norway's best-known
-accounting platforms** (fiken.no), and this app ships a Norwegian localization,
-which makes the overlap more visible than it would otherwise be. That is a
-Guideline 5.2.1 risk as well as an availability one. Decide before you create
-the app record, because the name is baked into the bundle ID, the icon and the
-wordmark, and changing it after submission is far more annoying than changing it
-now.
+**The name is decided: `Fiken: Fidgeting App`.** 20 of the 30 characters
+allowed. The suffix does two useful things — it separates the listing from
+**Fiken, one of Norway's best-known accounting platforms** (fiken.no), which
+matters more than usual because this app ships a Norwegian localization; and it
+gives you a name that is still available even if plain "Fiken" is taken, since
+App Store names have to be unique.
 
-**Give the listing two working URLs.** This is the one step still blocked, and
-it blocks submission, because App Store Connect requires a privacy policy URL
-and review will open your support URL.
+Availability is only confirmed when you type it into the New App form. If it
+bounces, add to the suffix rather than touching `Fiken` itself — the bundle ID,
+icon and wordmark all say Fiken, and the home screen name stays `Fiken`
+regardless. The store name and the icon caption are separate fields, and
+nothing in the app has to change for this.
 
-`krizer18/fiken` is **private**: unauthenticated, both `github.com/krizer18/fiken`
-and the Pages API return 404. That matters twice over — Pages only serves
-private repositories on a paid GitHub plan, and a support URL that 404s for a
-reviewer is a routine metadata rejection.
+**Switch on Pages — one toggle, and it is the last thing blocking submission.**
+App Store Connect will not take the version without a privacy policy URL.
 
-The policy itself is ready and pushed: `docs/index.md` with `docs/_config.yml`
-beside it, the layout Pages expects. Pick how to serve it:
+The repo is now public (`visibility: public`), so the support URL
+`https://github.com/krizer18/fiken` already returns 200 and reviewers can open
+it. Pages, though, is a separate switch and is still off: the API reports
+`has_pages: false`, and `https://krizer18.github.io/fiken/` returns 404.
 
-1. **Make the repo public** — free, immediate, and fixes both URLs at once.
-   Settings → General → Danger Zone → Change visibility. Then Settings → Pages
-   → Source: `main`, folder `/docs`. Worth a look through the history first,
-   though there is nothing but app code and docs in it.
-2. **Keep it private, publish the policy alone** — a second, public repo with
-   just `docs/`, or any static host. Then the support URL needs somewhere else
-   to point too: a mailto: link is accepted, and `kabirsh2004@gmail.com` is
-   already the contact address in the policy.
+- GitHub → `krizer18/fiken` → Settings → Pages
+- Source: **Deploy from a branch**, branch `main`, folder **`/docs`**, Save
+- Give it a minute to build, then open the URL and confirm it renders
 
-Either way, open `https://krizer18.github.io/fiken/` and confirm it renders
-before pasting it into App Store Connect. Pages takes a minute to build the
-first time.
+The content is already pushed and in the layout Pages expects: `docs/index.md`
+with `docs/_config.yml` beside it.
 
 ---
 
@@ -125,7 +119,7 @@ down.
 appstoreconnect.apple.com → **My Apps → + → New App**
 
 - Platform: iOS
-- Name: Fiken (see the name check in step 1)
+- Name: `Fiken: Fidgeting App` — 20 of the 30 characters allowed
 - Primary language: English
 - Bundle ID: `com.krizer18.Fiken` — Xcode registers this for you once the paid
   account is attached
@@ -151,7 +145,7 @@ appstoreconnect.apple.com → **My Apps → + → New App**
 | Screenshots | `design/appstore/` — drag all six in, in order |
 | Description | below |
 | Keywords | below |
-| Support URL | `https://github.com/krizer18/fiken`, but only once the repo is public — see step 1. A `mailto:` link is accepted if you keep it private |
+| Support URL | `https://github.com/krizer18/fiken` — public, returns 200 |
 | Copyright | `2026 Kabir Sharma` |
 
 The six screenshots are 1320×2868, the 6.9" iPhone size. One set covers every
@@ -257,8 +251,8 @@ app like this is metadata rather than code.
 - **The massage screen** has never been judged on a real hand (step 1)
 - **No build has ever been run** on a device (step 1)
 - **Audio provenance** is unrecorded (step 1)
-- **The name** is unchecked, and collides with a Norwegian accounting platform
-  (step 1)
+- **Pages is still off**, so the privacy policy URL 404s. One toggle, and it is
+  the only remaining hard block on submission (step 1)
 - **Two things in the brief were never built**: the About screen (no view, no
   `about.json`, no button in Settings) and the "open on" setting, along with the
   last-used-fidget restore it controls. Neither blocks submission. Decide
