@@ -1,0 +1,5 @@
+# GitHub Pages serves this folder as https://krizer18.github.io/fiken/
+# The only page here is the privacy policy, which the App Store listing links to.
+title: Fiken
+description: Privacy policy — Fiken collects nothing.
+theme: jekyll-theme-minimal

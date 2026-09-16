@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Merged with the keys Xcode generates (GENERATE_INFOPLIST_FILE = YES).
+	     This file exists only for keys that have no INFOPLIST_KEY_ build
+	     setting, which is every nested dictionary.
+
+	     Kept outside Fiken/ on purpose: that folder is a synchronized group,
+	     so a plist in it would also be copied into the bundle as a resource.
+
+	     UILaunchScreen: paper, so the first frame is not a white flash. The
+	     colour lives in the asset catalog and follows the system appearance. -->
+	<key>UILaunchScreen</key>
+	<dict>
+		<key>UIColorName</key>
+		<string>LaunchBackground</string>
+	</dict>
+</dict>
+</plist>

@@ -72,12 +72,6 @@ struct FidgetPicker: View {
             }
 
             Spacer()
-
-            Text("more on the way")
-                .font(.typewriter(12))
-                .foregroundStyle(palette.ink.opacity(0.45))
-                .padding(.leading, 24)
-                .padding(.bottom, 28)
         }
         .padding(.top, 90)
     }
