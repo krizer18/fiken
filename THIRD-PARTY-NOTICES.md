@@ -41,14 +41,24 @@ synthesised in `SoundEngine.swift` and are original to this project.
 | `bubble_pop.mp3` | bubble wrap pop |
 | `light_switch.mp3` | light switch |
 
-Both were confirmed by the project owner as free for commercial use.
+Both came from **Pixabay**, under the **Pixabay Content License**
+(https://pixabay.com/service/license-summary/), which permits commercial use
+and does not require attribution. Recorded by the project owner, 16 September
+2026.
 
-> Worth recording the source site and licence name here, for your own records.
-> These arrived named `universfield-bubble-pop-06-351337.mp3` and
-> `dragon-studio-light-switch-382712.mp3` — contributor plus asset ID, the
-> naming pattern of a stock audio library. The rename erased that trail, so a
-> link is the only durable evidence if the licence is ever questioned; "I
-> checked at the time" is not something you can produce later.
+The download filenames are the trail back to the source, so they are kept here
+even though the shipped files are renamed:
+
+| Shipped as | Downloaded as | Contributor | Pixabay ID |
+|---|---|---|---|
+| `bubble_pop.mp3` | `universfield-bubble-pop-06-351337.mp3` | Universfield | 351337 |
+| `light_switch.mp3` | `dragon-studio-light-switch-382712.mp3` | Dragon-Studio | 382712 |
+
+Since attribution isn't required, the table is a record for you rather than a
+notice owed to anyone. Two limits in that licence are worth knowing, and
+neither touches how Fiken uses the clips: the audio may not be redistributed as
+standalone sound files, and may not be the primary basis of a product that is
+itself sound, such as a soundboard or ringtone pack.
 
 If the two files are ever removed, the synthesised voices take over
 automatically and nothing breaks.

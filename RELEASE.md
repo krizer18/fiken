@@ -7,22 +7,17 @@ spend anything.
 
 ## 1. Before you pay Apple
 
-**Feel the massage screen.** It is the one thing in the app nobody has judged.
-The brief's own note says that if the four-pad illusion doesn't hold up, the
-fallback is two alternating contact zones instead of four. Rest four fingers on
-the pads and see whether you can tell *where* each pulse came from, or whether
-it just reads as one buzz. This is the last open design question and it costs
-ten seconds.
+**The app has been held, and the massage screen passes.** The Release build is
+installed on the phone and was launched from here; four fingers on the pads
+reads correctly on a real hand, so the four-pad sequence stays and the
+two-alternating-zones fallback in the brief is not needed. That was the last
+open design question.
 
-**Hold it before you upload.** Done as far as a machine can take it: the
-Release build is installed on the phone and has been launched from here. What
-remains is the part only a hand can do — use it for a minute, and judge the
-massage screen above.
-
-**Record where the audio came from.** `THIRD-PARTY-NOTICES.md` has a placeholder
-for it. You've confirmed the two clips are free for commercial use, but the
-rename erased the original filenames, which were the only trace of the source.
-A link is the only thing you can produce later if it is ever questioned.
+**Audio provenance is recorded.** Both clips came from Pixabay under the
+Pixabay Content License — commercial use allowed, attribution not required.
+Filenames, contributors and asset IDs are written down in
+`THIRD-PARTY-NOTICES.md`, which is the trail back to the source if it is ever
+questioned.
 
 **The name is decided: `Fiken: Fidgeting App`.** 20 of the 30 characters
 allowed. The suffix does two useful things — it separates the listing from
@@ -251,9 +246,9 @@ app like this is metadata rather than code.
 
 ## Still open
 
-- **The massage screen** has never been judged on a real hand. The app is
-  installed and running on the phone now, so this is a one-minute check (step 1)
-- **Audio provenance** is unrecorded (step 1)
+Both field questions are closed: the massage screen has been judged on a real
+hand and passes, and audio provenance is recorded. What remains is optional or
+cosmetic.
 - **Two things in the brief were never built**: the About screen (no view, no
   `about.json`, no button in Settings) and the "open on" setting, along with the
   last-used-fidget restore it controls. Neither blocks submission. Decide
