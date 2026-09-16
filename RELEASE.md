@@ -33,12 +33,30 @@ the app record, because the name is baked into the bundle ID, the icon and the
 wordmark, and changing it after submission is far more annoying than changing it
 now.
 
-**Turn on GitHub Pages.** The policy now lives at `docs/index.md` with a
-`docs/_config.yml` beside it, which is the layout Pages expects:
+**Give the listing two working URLs.** This is the one step still blocked, and
+it blocks submission, because App Store Connect requires a privacy policy URL
+and review will open your support URL.
 
-- GitHub → `krizer18/fiken` → Settings → Pages → Source: `main`, folder `/docs`
-- It lands at `https://krizer18.github.io/fiken/` — open it and confirm before
-  you paste it into App Store Connect
+`krizer18/fiken` is **private**: unauthenticated, both `github.com/krizer18/fiken`
+and the Pages API return 404. That matters twice over — Pages only serves
+private repositories on a paid GitHub plan, and a support URL that 404s for a
+reviewer is a routine metadata rejection.
+
+The policy itself is ready and pushed: `docs/index.md` with `docs/_config.yml`
+beside it, the layout Pages expects. Pick how to serve it:
+
+1. **Make the repo public** — free, immediate, and fixes both URLs at once.
+   Settings → General → Danger Zone → Change visibility. Then Settings → Pages
+   → Source: `main`, folder `/docs`. Worth a look through the history first,
+   though there is nothing but app code and docs in it.
+2. **Keep it private, publish the policy alone** — a second, public repo with
+   just `docs/`, or any static host. Then the support URL needs somewhere else
+   to point too: a mailto: link is accepted, and `kabirsh2004@gmail.com` is
+   already the contact address in the policy.
+
+Either way, open `https://krizer18.github.io/fiken/` and confirm it renders
+before pasting it into App Store Connect. Pages takes a minute to build the
+first time.
 
 ---
 
@@ -133,7 +151,7 @@ appstoreconnect.apple.com → **My Apps → + → New App**
 | Screenshots | `design/appstore/` — drag all six in, in order |
 | Description | below |
 | Keywords | below |
-| Support URL | `https://github.com/krizer18/fiken` |
+| Support URL | `https://github.com/krizer18/fiken`, but only once the repo is public — see step 1. A `mailto:` link is accepted if you keep it private |
 | Copyright | `2026 Kabir Sharma` |
 
 The six screenshots are 1320×2868, the 6.9" iPhone size. One set covers every
