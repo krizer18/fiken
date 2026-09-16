@@ -181,13 +181,19 @@ somewhere else: a long video, a longer lecture, a waiting room.
 "Fiken" — the app name is already indexed.
 
 ```
-fidget,haptic,stress,focus,bubble,wrap,spinner,pop,calm,relax,sensory,stim,restless,quiet,hands
+haptic,stress,focus,bubble,wrap,spinner,pop,calm,relax,sensory,stim,tactile,asmr,toy,restless
 ```
 
-That's 95 characters. `anxiety` and `adhd` are the obvious additions and both
-fit, but keywords naming a condition invite a closer read of whether the
-listing implies a medical benefit (Guideline 1.4.1). The description above
-claims nothing therapeutic; keep it that way if you add them.
+That's 92 characters. `fidget` came out because the name now carries
+"Fidgeting" and Apple searches the name and the keywords together — repeating a
+word buys nothing. `quiet` and `hands` came out as the weakest earners. The
+freed characters went to `tactile`, `asmr` and `toy`, which people actually
+search for and which nothing else in the listing covers.
+
+`anxiety` and `adhd` are the obvious additions and both still fit, but keywords
+naming a condition invite a closer read of whether the listing implies a
+medical benefit (Guideline 1.4.1). The description above claims nothing
+therapeutic; keep it that way if you add them.
 
 ### Promotional text (optional, 170 characters, editable without review)
 
