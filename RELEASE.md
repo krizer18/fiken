@@ -242,6 +242,14 @@ Review is typically a day or two. Rejections are normal and usually specific —
 they tell you the guideline number and what to fix. The most likely one for an
 app like this is metadata rather than code.
 
+**Expect Guideline 2.1, "Information Needed", on the first submission.** It is
+what Apple sends accounts with no review history, and it is a questionnaire
+rather than a fault: purpose, audience, how to reach the features, which
+external services you use, regional differences, and a screen recording made on
+a real device. Answers are written out in `APP-REVIEW-NOTES.md` — paste them
+into Resolution Center, and into App Review Information → Notes so they carry
+to later submissions. The recording is the only part that takes real effort.
+
 ---
 
 ## Still open
